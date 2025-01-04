@@ -1,2 +1,3 @@
 # Minor_Project
-my first repose
+my first repository in Github
+
