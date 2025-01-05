@@ -4,6 +4,7 @@ import Login from "./Pages/Login.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import HeroIMG from "./HeroIMG.jsx"
 import GuidesNature from "./Pages/GuidesNature.jsx";
+import BookNow from "./Pages/BookNow.jsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
      <Route path = "/login" element = {<Login />} />
      <Route path = "/aboutUs" element = {<AboutUs />} />
      <Route path = "/guides" element = {<GuidesNature />} />
+     <Route path = "/bookNow" element = {<BookNow />} />
     </Routes>
    </Router>
    

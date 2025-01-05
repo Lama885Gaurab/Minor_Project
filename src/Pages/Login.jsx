@@ -61,7 +61,7 @@ const submitHandler = (e) => {
             
             {/* Sign in and forgot password */}
             <div className='h-[20%] w-[60%] flex flex-col items-center justify-evenly'>
-              <input type="submit" value="sign in" className='border-2 h-[35px] w-[120px] rounded-full font-bold bg-blue-800 text-[#F5F5D7] hover:bg-blue-700 active:bg-black' />
+              <input type="submit" value="sign in" className='border-2 h-[35px] w-[120px] rounded-full font-bold bg-blue-800 text-[#F5F5D7] hover:bg-blue-700' />
               <p className='h-[30px] w-[180px] font-thin hover:text-blue-800 text-center'>forgot password ?</p>
             </div>
 

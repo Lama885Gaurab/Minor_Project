@@ -12,12 +12,12 @@ const currentYear = new Date().getFullYear();
         <div className='h-[42%] w-full'>
          <p className='ml-6 mt-[17px] font-bold text-[#F5F5DC]'>Contact Us :</p>
           <ol className='h-[60%] gap-4 mt-[10px] w-full flex flex-col items-center font-semibold text-sm text-pink-700'>
-            <li className='h-[30%] ml-[65px]'>Email: <a href="" className='border-transparent ml-3 text-white hover:text-green-600'>info@explorenepaltreks.com</a></li>           
+            <li className='h-[30%] ml-[65px]'>Email: <a href="" className='border-transparent ml-3 text-white font-thin hover:text-green-600'>info@explorenepaltreks.com</a></li>           
             <li className='h-[40%] w-[200px] flex items-center'>Follow:
-                <a href="" className='h-full w-[45px] ml-3 flex items-center justify-center'><i className="fa-brands fa-facebook text-2xl text-white hover:text-green-600 cursor-pointer"></i></a>
-                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-instagram text-2xl text-white hover:text-green-600 cursor-pointer "></i></a> 
-                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-x-twitter text-2xl text-white cursor-pointer hover:text-green-600"></i></a> </li>
-            <li className='h-[30%]'>WhatsApp: <a href="" className='border-transparent ml-3 hover:text-green-600 text-white '>+977 987 654 321</a></li>
+                <a href="" className='h-full w-[45px] ml-3 flex items-center justify-center'><i className="fa-brands fa-facebook text-2xl text-blue-800 cursor-pointer"></i></a>
+                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-instagram text-2xl bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 text-white cursor-pointer "></i></a> 
+                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-x-twitter text-2xl text-black cursor-pointer"></i></a> </li>
+            <li className='h-[30%]'>WhatsApp: <a href="" className='border-transparent ml-3 text-white '>+977 987 654 321</a></li>
          </ol>       
 
         </div>

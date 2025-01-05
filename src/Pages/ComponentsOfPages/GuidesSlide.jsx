@@ -19,7 +19,7 @@ const GuidesSlide = () => {
   useEffect(() => {
     const setTimer = setInterval( () => {
         nextImg();
-    }, ); 
+    }, 7000); 
   
     return () => {
       clearInterval(setTimer);
@@ -29,11 +29,11 @@ const GuidesSlide = () => {
     
 
     const prevImg = () => {
-        setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex -- ));
+        setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1 ));
     }
 
     const nextImg = () => {
-        setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex ++ ));
+        setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1 ));
     }
 
   return (
@@ -60,9 +60,9 @@ const GuidesSlide = () => {
         </button>
         </div>
         {/* Dots navigtion */}
-        <div className=' bg-white w-[400px] h-[50px] flex items-center justify-evenly '>
+        <div className=' bg-pink-500 w-[400px] h-[50px] flex items-center justify-evenly '>
            {images.map((image, index) => (
-            <button key={index} className={`h-10 w-10 transition-all rounded-full ${index === currentIndex ? "bg-green-800 w-9 h-9 rounded-full" : "bg-gray-400"}`} onClick={() =>{
+            <button key={index} className={`h-10 w-10 rounded-full ${index === currentIndex ? "bg-green-800 w-9 h-9 rounded-full" : "bg-gray-400"}`} onClick={() =>{
                 setCurrentIndex(index);
             }}></button>
            ))}

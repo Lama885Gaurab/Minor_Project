@@ -58,7 +58,7 @@ const GuidesNature = () => {
             </div>
           </div>
           <div className='md:h-[20%] md:w-[80%] sm:relative sm:top-12 md:top-0 sm:h-[40%] sm:w-[50%] h-[30%] w-[80%] bg-white shadow-sm shadow-black rounded flex items-center justify-around '>
-            <span>Dawa Sherpa</span>
+            <span>Guide</span>
             <p className='h-[50%] rounded w-[40%] gap-2 flex items-center justify-center active:bg-gray-200 hover:border-2 font-semibold group cursor-pointer'> <span className=' hidden sm:block'>View</span> Profile  <i className="fa-solid fa-chevron-right group-hover:text-xl"/></p>
           </div>
         </section>
@@ -71,7 +71,7 @@ const GuidesNature = () => {
         </div>
         </div>
         <div className='md:h-[20%] md:w-[80%] sm:relative sm:top-12 md:top-0 sm:h-[40%] sm:w-[50%] h-[30%] w-[80%] bg-white shadow-sm shadow-black rounded flex items-center justify-around'>
-        <span>Lakpa Sherpa</span>
+        <span>Guide</span>
         <p className='h-[50%] rounded w-[40%] gap-2 hover:border-2 flex items-center justify-center active:bg-gray-200 font-semibold group cursor-pointer'><span className='hidden sm:block'>View</span> Profile  <i className="fa-solid fa-chevron-right group-hover:text-xl"/></p>
         </div>
         </section>
@@ -84,7 +84,7 @@ const GuidesNature = () => {
         </div>
         </div>
         <div className='md:h-[20%] md:w-[80%] sm:relative sm:top-12 md:top-0 sm:h-[40%] sm:w-[50%] h-[30%] w-[80%] bg-white shadow-sm shadow-black rounded flex items-center justify-around'>
-        <span>Dawa Sherpa</span>
+        <span>Guide</span>
         <p className='h-[50%] rounded w-[40%] gap-2 hover:border-2 flex items-center justify-center active:bg-gray-200 font-semibold group cursor-pointer'><span className='hidden sm:block'>View</span>  Profile  <i className="fa-solid fa-chevron-right group-hover:text-xl"/></p>
         </div>
         </section>
@@ -97,7 +97,7 @@ const GuidesNature = () => {
         </div>
         </div>
         <div className='md:h-[20%] md:w-[80%] sm:relative sm:top-12 md:top-0 sm:h-[40%] sm:w-[50%] h-[30%] w-[80%] bg-white shadow-sm shadow-black rounded flex items-center justify-around'>
-        <span>Dawa Sherpa</span>
+        <span>Guide</span>
         <p className='h-[50%] rounded w-[40%] gap-2 hover:border-2 flex items-center justify-center active:bg-gray-200 font-semibold group cursor-pointer'><span className='hidden sm:block'>View</span> Profile  <i className="fa-solid fa-chevron-right group-hover:text-xl"/></p>
         </div>
         </section>

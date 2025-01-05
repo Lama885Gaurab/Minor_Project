@@ -27,7 +27,11 @@ import { Link, useLocation } from "react-router-dom";
 
     // changing the color of the certain div of the particular element
     const logIn = {
-        "/login" : "bg-[#006400]"
+        "/login" : "bg-green-800"
+    }[location.pathname];
+
+    const aboutUs = {
+        "/aboutUs" : "bg-green-800"
     }[location.pathname];
 
     // on clicking outside the dropdown box it makes it disappear
@@ -73,7 +77,7 @@ import { Link, useLocation } from "react-router-dom";
                     {/* Destinations */}
                     <li className="hidden md:block group border-b-2 border-transparent transition-all ease-linear duration-500 hover:border-white"> <a href="#">Destinations <i className="fa-solid fa-angle-down group-hover:rotate-180 duration-500"></i></a>
                         <div className="h-[335px] w-[200px] hidden group-hover:block absolute top-[46px] "> 
-                           <div className={`${logIn}  h-[300px] w-[200px] shadow-sm shadow-black bg-[#228b22ab] rounded-lg absolute top-[35px]`}>
+                           <div className={`${logIn} ${aboutUs} h-[300px] w-[200px] shadow-sm shadow-black bg-[#228b22ab] rounded-lg absolute top-[35px]`}>
                                 <ul className="h-[300px] w-[200px] flex flex-col justify-evenly">
                                     <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Pokhara</a></li>
                                     <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10">Everest Region</a></li>
@@ -91,7 +95,7 @@ import { Link, useLocation } from "react-router-dom";
                     {/* Tours and Packages */}
                     <li className="hidden md:block border-b-2 border-transparent transition-all duration-500 ease-linear hover:border-white group"> <a href="#">Tours and Packages <i className="fa-solid fa-angle-down group-hover:rotate-180 duration-500"></i></a> 
                        <div className="h-[335px] w-[200px] absolute top-[45px] hidden group-hover:block">
-                           <ul className={` ${logIn} h-[300px] w-[200px] bg-[#228b22ab] mt-[36px] flex flex-col justify-evenly rounded-md shadow-sm shadow-black`}>
+                           <ul className={` ${logIn} ${aboutUs} h-[300px] w-[200px] bg-[#228b22ab] mt-[36px] flex flex-col justify-evenly rounded-md shadow-sm shadow-black`}>
                                 <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Trekking Tours</a></li>
                                 <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Cultural Tours</a></li>
                                 <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Wildlife Tours</a></li>
@@ -107,7 +111,7 @@ import { Link, useLocation } from "react-router-dom";
                     {/* Guides */}
                     <li className="hidden lg:block group border-b-2 border-transparent transition-all duration-500 ease-linear hover:border-white"> <a href="#"> Guides <i className="fa-solid fa-angle-down group-hover:rotate-180 duration-500"></i></a> 
                         <div className="h-[335px] w-[150px] absolute top-[46px] hidden group-hover:block">
-                            <ul className="h-[300px] w-[150px] mt-[35px] bg-[#228b22ab] shadow-sm shadow-black rounded-sm flex flex-col justify-evenly">
+                            <ul className={ `${logIn} ${aboutUs} h-[300px] w-[150px] mt-[35px] bg-[#228b22ab] shadow-sm shadow-black rounded-sm flex flex-col justify-evenly`}>
 
                                 {location.pathname !== "/guides" && (
                                 <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><Link to= "/guides" className="pl-2">Nature</Link></li>
@@ -123,17 +127,19 @@ import { Link, useLocation } from "react-router-dom";
 
 
                     {/* Book Now */}
-                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <a href="#"><i className="fa-regular fa-calendar-check"></i> Book Now</a> </li>            
+                    {location.pathname !== "/bookNow" && (
+                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to="bookNow"><li className="fa-regular fa-calendar-check"/> Book Now</Link> </li> 
+                    )}           
 
 
                     {/* About Us */}
                     {location.pathname !== "/aboutUs" && (
-                    <li className="lg:block md:hidden border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to = "/aboutUs"><i className="fa-regular fa-address-card"/> About Us</Link> </li>                   
+                    <li className="lg:block md:hidden border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to = "/aboutUs"> About Us</Link> </li>                   
                     )}
 
                     {/* Login for larger devices */}
                     {location.pathname !== "/login" && (
-                    <li className="hidden lg:block border-2 bg-white text-green-700 border-green-900 px-2 py-1 rounded-2xl hover:bg-green-100 active:bg-blue-600 active:text-white cursor-pointer"><Link to ="/login">Login</Link></li>
+                    <li className="hidden lg:block border-2 bg-white text-green-700 border-green-900 px-2 py-1 rounded-2xl font-semibold hover:bg-green-100 active:text-black cursor-pointer"><Link to ="/login">Login</Link></li>
                     )}
 
 
