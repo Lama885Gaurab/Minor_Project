@@ -13,7 +13,6 @@ function App() {
    
    <Router>
     <Header />
-
     <Routes>
      <Route path = "/" element = {< HeroIMG/>} />
      <Route path = "/login" element = {<Login />} />

@@ -34,10 +34,9 @@ const location = useLocation();
   return (
     
     
-    <div ref={hamburgerRef} className={` ${bgColor} text-[#F5F5DC] bg-[#228b22ab] shadow-black rounded-md h-[350px] w-[200px] top-[80px] right-0 absolute hidden md:block lg:hidden shadow-sm transition-all duration-500`}>
-         
+    <div ref={hamburgerRef} className={` ${bgColor} text-[#F5F5DC] bg-[#228b22ab] shadow-black rounded-md h-[350px] w-[200px] top-[80px] right-0 absolute hidden md:block lg:hidden shadow-sm transition-all duration-500`}>         
       <ul className="h-[350px] w-full flex flex-col justify-evenly ">
-        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">Book Now</a></li>
+        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to="/bookNow">Book Now</Link></li>
         <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">Guides</a></li>
         <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to = "/aboutUs">About Us</Link></li>
         <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">FAQ</a></li>
