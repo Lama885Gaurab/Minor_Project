@@ -6,7 +6,6 @@ import Image4 from '../assets/ba92d38e-1234-4242-8c6b-22640272c2b8.webp';
 import Image5 from '../assets/caea7a34-ad77-4f7f-a98d-91bbe04f3dc1.webp'
 
 import Footer from '../Components/Footer.jsx';
-import GuidesSlide from './ComponentsOfPages/GuidesSlide.jsx';
 
 
 
@@ -104,10 +103,6 @@ const GuidesNature = () => {
 
       </div>
      </div>
-
-
-     {/* slider */}
-     <GuidesSlide />
 
      <Footer />
 </>

@@ -89,13 +89,32 @@ const BookNow = () => {
       <p className='h-[80%] w-[90%] md:text-3xl sm:text-xl text-md font-semibold text-[#F5F5DC] flex items-center justify-center'>" Book Your Tour Now "</p>
     </div>
 
-    {/* Information detail */}
-    <div className='h-[40px] w-full border-2 border-black'></div>
+   
+    <div className='h-[80px] w-full border-2 border-black'>
+      <p className='h-full font-semibold text-sm md:text-xl pl-10 pt-8'>Please fill out this form before submission</p>
+    </div>
 
+     {/* Information detail */}
+    <div className='h-[800px] w-full border-2 border-black flex'>
+       
+       <div className='h-[210px] w-full '>
+      <section className='h-[100px] w-full border-2 border-black mt-2'>
+        <form action="" className='h-full flex flex-col md:flex-row justify-evenly items-center '>
 
-    <div className='h-[900px] w-full border-2 border-black flex  '>
-      <section className='h-[250px] w-[45%] bg-red-900 border-2 border-black '></section>
-      <section className='h-[250px] w-[45%] bg-red-900 border-2 border-black '></section>
+          <div className='h-[50%] md:w-[450px] w-full flex items-center md:justify-evenly md:gap-0 gap-3'>
+          <label className='md:text-lg md:pl-0 pl-4' htmlFor="">Name : </label>
+          <input type="text" placeholder='your full name' className='border-2 border-black focus:border-blue-900 pl-4 md:w-[70%] w-[75%] md:h-[35px] rounded-sm' />
+          </div>
+
+          <div className='h-[50%] md:w-[450px] w-full flex items-center md:justify-evenly justify-start md:gap-0 gap-4'>
+          <label className='md:text-lg md:pl-0 pl-4' htmlFor="">Email : </label>
+          <input type="email" placeholder="your e-mail" className='border-2 border-black focus:border-blue-900 pl-4 md:h-[35px] rounded-sm md:w-[70%] w-[75%] '/>
+          </div>       
+          
+        </form>
+      </section>
+      <section className='h-[100px] w-full border-2 border-black mt-2'></section>
+      </div>
     </div>
 
     

@@ -79,12 +79,12 @@ import { Link, useLocation } from "react-router-dom";
                         <div className="h-[335px] w-[200px] hidden group-hover:block absolute top-[46px] "> 
                            <div className={`${logIn} ${aboutUs} h-[300px] w-[200px] shadow-sm shadow-black bg-[#228b22ab] rounded-lg absolute top-[35px]`}>
                                 <ul className="h-[300px] w-[200px] flex flex-col justify-evenly">
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Pokhara</a></li>
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10">Everest Region</a></li>
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Lumbini</a></li>
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Kathmandu Valley</a></li>
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Chitwan N.P</a></li>
-                                    <li className="h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className="pl-10 ">Annapurna Region</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10 ">Pokhara</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10">Everest Region</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10 ">Lumbini</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10 ">Kathmandu Valley</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10 ">Chitwan N.P</a></li>
+                                    <li className="h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className="pl-10 ">Annapurna Region</a></li>
                                 </ul>
                            </div>
                         </div>
@@ -96,11 +96,11 @@ import { Link, useLocation } from "react-router-dom";
                     <li className="hidden md:block border-b-2 border-transparent transition-all duration-500 ease-linear hover:border-white group"> <a href="#">Tours and Packages <i className="fa-solid fa-angle-down group-hover:rotate-180 duration-500"></i></a> 
                        <div className="h-[335px] w-[200px] absolute top-[45px] hidden group-hover:block">
                            <ul className={` ${logIn} ${aboutUs} h-[300px] w-[200px] bg-[#228b22ab] mt-[36px] flex flex-col justify-evenly rounded-md shadow-sm shadow-black`}>
-                                <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Trekking Tours</a></li>
-                                <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Cultural Tours</a></li>
-                                <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Wildlife Tours</a></li>
-                                <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href=""className=" pl-8">Luxury Tours</a></li>
-                                <li className=" h-[50px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="" className=" pl-8">Family Tours</a></li>
+                                <li className=" h-[50px] w-full hover:bg-[#000] hover:font-bold transition-all flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className=" pl-8">Trekking Tours</a></li>
+                                <li className=" h-[50px] w-full hover:bg-[#000] hover:font-bold transition-all flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className=" pl-8">Cultural Tours</a></li>
+                                <li className=" h-[50px] w-full hover:bg-[#000] hover:font-bold transition-all flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className=" pl-8">Wildlife Tours</a></li>
+                                <li className=" h-[50px] w-full hover:bg-[#000] hover:font-bold transition-all flex items-center border-2 border-transparent hover:border-white rounded-md"><a href=""className=" pl-8">Luxury Tours</a></li>
+                                <li className=" h-[50px] w-full hover:bg-[#000] hover:font-bold transition-all flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="" className=" pl-8">Family Tours</a></li>
                             </ul>
                        </div>                             
                     </li>                       
@@ -116,10 +116,10 @@ import { Link, useLocation } from "react-router-dom";
                                 {location.pathname !== "/guides" && (
                                 <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><Link to= "/guides" className="pl-2">Nature</Link></li>
                                 )}
-                                <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="#" className="pl-2">Cultural</a></li>
-                                <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="#" className="pl-2">Trekking</a></li>
-                                <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="#" className="pl-2">Adventure</a></li>
-                                <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><a href="#" className="pl-2">History</a></li>
+                                <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">Cultural</a></li>
+                                <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">Trekking</a></li>
+                                <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">Adventure</a></li>
+                                <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">History</a></li>
                             </ul>
                         </div>
                     </li>
