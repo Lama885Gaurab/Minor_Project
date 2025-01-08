@@ -114,7 +114,7 @@ import { Link, useLocation } from "react-router-dom";
                             <ul className={ `${logIn} ${aboutUs} h-[300px] w-[150px] mt-[35px] bg-[#228b22ab] shadow-sm shadow-black rounded-sm flex flex-col justify-evenly`}>
 
                                 {location.pathname !== "/guides" && (
-                                <li className=" h-[45px] w-full hover:bg-[#228b22e3] flex items-center border-2 border-transparent hover:border-green-800"><Link to= "/guides" className="pl-2">Nature</Link></li>
+                                <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><Link to= "/guides" className="pl-2">Nature</Link></li>
                                 )}
                                 <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">Cultural</a></li>
                                 <li className=" h-[45px] w-full hover:bg-[#000] hover:font-bold transition-all duration-500 ease-in-out flex items-center border-2 border-transparent hover:border-white rounded-md"><a href="#" className="pl-2">Trekking</a></li>
