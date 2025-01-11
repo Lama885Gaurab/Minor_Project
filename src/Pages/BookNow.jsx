@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Practice from './Practice.jsx';
+import BookNowComp from './BookNowComp.jsx';
 import Image from '../assets/ae90c633-3a89-426f-9dde-1962b9e238c2.webp';
 import Image1 from '../assets/33b08644-d4da-4e02-a4be-d0e9ce24711b.webp';
 import Image2 from '../assets/ecca77c6-0e91-4cd8-aa44-dad305648103.webp';
@@ -113,53 +115,12 @@ const BookNow = () => {
           </div>       
           
         </form>
-      </section>
-
-      <div className='h-[100px] w-full flex mt-2 items-center justify-center border-b'>
-      <section className='h-[100px] w-[200px] group flex items-center justify-center'>
-       <div className='h-full w-[150px] flex flex-col justify-end'>
-          <div className='h-[55px] w-full group cursor-pointer flex flex-col items-center justify-between'>
-             <p className='text-lg'>Destinations  <i className="fa-solid fa-chevron-down group-hover:rotate-[-180deg] duration-500 " /> </p>
-             <div className='h-[5px] w-full bg-green-700 scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100 transition-transform duration-600 ease-linear'></div>
-          </div>
-
-          {/* dropdown contents */}
-          <div  className='hidden group-hover:block'>                    
-          <div className='md:h-[310px] h-[220px] w-full left-0 md:top-[1157px] flex top-[854px] bg-red-300 group-hover:block absolute '>
-            <section className='h-full w-full flex flex-col'>
-              
-              <div className='h-[80%] w-full flex font-mono md:text-xl border-t-2 text-[#F5F5DC] '>
-              <div className='h-full w-[50%] bg-[#228B22] flex items-center flex-col justify-around'>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Pokhara</a>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Everest Region</a>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Lumbini</a>
-              </div>   
-
-              <div className='h-full w-[50%] bg-[#228B22] flex items-center flex-col justify-around'>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Kathmandu Valley</a>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Chitwan N.P</a>
-                <a className='border-b-2 border-transparent hover:border-white transition-all duration-200 ease-in' href="">Annapurna Region</a>
-             </div>    
-             </div> 
-             
-             {/* cross */}
-             <section className=' h-[20%] bg-black flex flex-col items-center justify-center'>
-              <div className='cursor-pointer h-[60%] w-[45px] rounded-sm active:border-[2px] flex items-center justify-center'>
-              <div className='h-[3px] absolute w-[27px] border-2 bg-white rotate-45'></div>
-              <div className='h-[3px] w-[27px] border-2 bg-white rotate-[-45deg]'></div>
-              </div>
-             </section>       
-
-            </section> 
-
-            </div> 
-            </div>    
-          </div>
-       
-         </section>
-      </div>      
+      </section><br />     
+      <Practice />
     </div>    
   </div>
+
+  <BookNowComp />
     
       
 

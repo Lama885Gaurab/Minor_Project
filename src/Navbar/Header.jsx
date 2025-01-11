@@ -128,7 +128,7 @@ import { Link, useLocation } from "react-router-dom";
 
                     {/* Book Now */}
                     {location.pathname !== "/bookNow" && (
-                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to="bookNow"><li className="fa-regular fa-calendar-check"/> Book Now</Link> </li> 
+                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to="bookNow"><i className="fa-regular fa-calendar-check"/> Book Now</Link> </li> 
                     )}           
 
 
@@ -151,7 +151,7 @@ import { Link, useLocation } from "react-router-dom";
                     
                     {/* Hamburger Menu that appears in md */}
                     <li onClick = {(e) => toggleHamburger(e)} className="hidden md:block lg:hidden">                                 
-                      <a href="" className="hover:text-green-100" > <i className="fa-solid fa-bars"></i></a> 
+                      <a href="" className="hover:text-green-100" > <i className="fa-solid fa-bars" /></a> 
                       {isHamburger && <Hamburger
 
                     //   passing the state / we can also pass the state to another file
