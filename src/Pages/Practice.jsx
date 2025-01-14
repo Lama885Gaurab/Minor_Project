@@ -8,14 +8,14 @@ const Practice = () => {
 
   return (
                                                        
-    <div className='w-full bg-emerald-600'>
+    <div className='w-full'>
         <div 
         onMouseEnter={() => {
-            setIsHovered(true);
+            setIsHovered();
         }}
         
         onMouseLeave={() => {
-            setIsHovered(false);
+            setIsHovered();
         }}  
 
         className='group cursor-pointer'>
@@ -47,8 +47,6 @@ const Practice = () => {
                 </div>
             </div>
         </div>
-        <div className="w-full bg-pink-700">Contet B</div>
-        <div className="text-black">Content C</div>
     </div>
     
   )

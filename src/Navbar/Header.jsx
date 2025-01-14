@@ -12,7 +12,7 @@ import { Link, useLocation } from "react-router-dom";
  const [isHamburger, setIsHamburger] = useState(false);
  const toggleHamburger = (e) => {
     e.preventDefault(); 
-    setIsHamburger(prevState => !prevState);
+    setIsHamburger(!isHamburger);
   };
     
     // toggling the 3 dots icon
@@ -39,7 +39,7 @@ import { Link, useLocation } from "react-router-dom";
 
        useEffect(() => {
         const clickOutside = (e) => {
-            if(hamburgerRef.current && hamburgerRef.current.contains(e.target)) {  //this line is for checking if the clicked element is outside of the refrenced element
+            if(hamburgerRef.current && !hamburgerRef.current.contains(e.target)) {  //this line is for checking if the clicked element is outside of the refrenced element
               setIsHamburger(false);
             };
         };

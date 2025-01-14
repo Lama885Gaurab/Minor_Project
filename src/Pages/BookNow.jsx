@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Footer from '../Components/Footer.jsx';
 import Practice from './Practice.jsx';
 import BookNowComp from './BookNowComp.jsx';
+import ColorPicker from './ColorPicker.jsx';
 import Image from '../assets/ae90c633-3a89-426f-9dde-1962b9e238c2.webp';
 import Image1 from '../assets/33b08644-d4da-4e02-a4be-d0e9ce24711b.webp';
 import Image2 from '../assets/ecca77c6-0e91-4cd8-aa44-dad305648103.webp';
@@ -98,7 +100,7 @@ const BookNow = () => {
     </div>
 
      {/* Information detail */}
-    <div className='h-[800px] w-full border-2 border-black flex'>
+    <div className='h-[200px] w-full border-2 border-black flex'>
        
        <div className='h-[210px] w-full '>
       <section className='h-[100px] w-full border-2 border-black mt-2'>
@@ -115,14 +117,16 @@ const BookNow = () => {
           </div>       
           
         </form>
-      </section><br />     
-      <Practice />
+      </section><br />    
+     
     </div>    
   </div>
+  <Practice />
+  <br />
 
-  <BookNowComp />
-    
-      
+  <BookNowComp />  <br />
+  <ColorPicker />
+  <Footer />
 
     
 
