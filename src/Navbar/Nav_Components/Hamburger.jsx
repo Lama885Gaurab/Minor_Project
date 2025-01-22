@@ -9,10 +9,11 @@ const Hamburger = ( {setIsHamburger} ) => {
   
    // on clicking outside the dropdown box it makes it disappear
    const hamburgerRef = useRef(null);  //initializing the dropdownRef as null
+
    function clickOutside(e){
-    if(hamburgerRef.current && !hamburgerRef.current.contains(e.target)) {  //this line is for checking if the clicked element is outside of the refrenced element
+    if(hamburgerRef.current && !hamburgerRef.current.contains(e.target)) {
       setIsHamburger(false);
-    };
+    };  
 };
 
  useEffect(() => {
@@ -36,9 +37,9 @@ const location = useLocation();
     
     <div ref={hamburgerRef} className={` ${bgColor} text-[#F5F5DC] bg-[#228b22ab] shadow-black rounded-md h-[350px] w-[200px] top-[80px] right-0 absolute hidden md:block lg:hidden shadow-sm transition-all duration-500`}>         
       <ul className="h-[350px] w-full flex flex-col justify-evenly ">
-        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to="/bookNow">Book Now</Link></li>
+        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to="/book-now">Book Now</Link></li>
         <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">Guides</a></li>
-        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to = "/aboutUs">About Us</Link></li>
+        <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to = "/about-us">About Us</Link></li>
         <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">FAQ</a></li>
       </ul>
     </div>

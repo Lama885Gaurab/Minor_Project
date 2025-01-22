@@ -36,7 +36,7 @@ const ThreeeVdots = ({setIsThreeVdotsOpen}) => {
     <ul className="h-[350px] w-full flex flex-col justify-evenly">
       <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">Tours and Packages</a></li>
       <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">Destinations</a></li>
-      <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to="/bookNow">Book Now</Link></li>
+      <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to="/book-now">Book Now</Link></li>
       <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><Link to= "">Guides</Link></li>
       <li className='h-[45px] w-full hover:bg-[#228b22e3] flex items-center justify-center border-2 border-transparent hover:border-green-800'><a href="">FAQ</a></li>
     </ul>

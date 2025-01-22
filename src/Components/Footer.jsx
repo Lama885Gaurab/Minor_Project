@@ -13,10 +13,11 @@ const currentYear = new Date().getFullYear();
          <p className='ml-6 mt-[17px] font-bold text-[#F5F5DC]'>Contact Us :</p>
           <ol className='h-[60%] gap-4 mt-[10px] w-full flex flex-col items-center font-semibold text-sm text-pink-700'>
             <li className='h-[30%] ml-[35px]'>Email: <a href="" className='border-transparent ml-3 text-white font-thin hover:text-green-600'>info@explorenepaltreks.com</a></li>           
-            <li className='h-[40%] w-[200px] flex items-center'>Follow:
-                <a href="" className='h-full w-[45px] ml-3 flex items-center justify-center'><i className="fa-brands fa-facebook text-2xl text-black cursor-pointer"></i></a>
-                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-instagram text-2xl text-black cursor-pointer "></i></a> 
-                <a href="" className='h-full w-[45px] flex items-center justify-center'><i className="fa-brands fa-square-x-twitter text-2xl text-black cursor-pointer"></i></a> </li>
+            <li className='h-[40%] w-[200px] flex items-center gap-3'>Follow:
+               <p className='text-white cursor-pointer font-thin hover:text-green-500'>facebook</p> 
+               <p className='text-white cursor-pointer font-thin hover:text-green-500'>twitter</p>
+               <p className='text-white cursor-pointer font-thin hover:text-green-500'>instagram</p>
+            </li>
             <li className='h-[30%]'>WhatsApp: <a href="" className='border-transparent ml-3 text-white '>+977 987 654 321</a></li>
          </ol>       
 

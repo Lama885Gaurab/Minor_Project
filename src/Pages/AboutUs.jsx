@@ -2,7 +2,7 @@
 
 
 
-import Footer from '../Components/Footer.jsx';
+
 import React from 'react';
 import Image1 from '../assets/17cecda5-17eb-49c6-8c70-a62aaa11c5d4.webp';
 import Image2 from '../assets/746095ca-890d-49fc-b079-23d13378f075.webp';
@@ -74,7 +74,6 @@ const AboutUs = () => {
 
      <div className='h-[30px] w-full bg-gray-300'></div>
 
-     <Footer />
           
     </>
     

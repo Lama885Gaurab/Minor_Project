@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import ImageLogo from "../assets/NavLogo.webp";
 import Hamburger from "./Nav_Components/Hamburger";
 import ThreeeVdots from "./Nav_Components/ThreeeVdots";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, matchPath } from "react-router-dom";
 
 
  function Header() {
@@ -25,41 +25,20 @@ import { Link, useLocation } from "react-router-dom";
     // using the location for navigating and for other purposes
     const location = useLocation();
 
+    const isBookingFormPath = matchPath("/booking-form/:id", location.pathname);
+
     // changing the color of the certain div of the particular element
     const logIn = {
         "/login" : "bg-green-800"
     }[location.pathname];
 
     const aboutUs = {
-        "/aboutUs" : "bg-green-800"
+        "/about-us" : "bg-green-800"
     }[location.pathname];
-
-    // on clicking outside the dropdown box it makes it disappear
-       const hamburgerRef = useRef(null);  //initializing the dropdownRef as null
-
-       useEffect(() => {
-        const clickOutside = (e) => {
-            if(hamburgerRef.current && !hamburgerRef.current.contains(e.target)) {  //this line is for checking if the clicked element is outside of the refrenced element
-              setIsHamburger(false);
-            };
-        };
-       
-
-     //adding event listener to detect the click
-     document.addEventListener("mousedown", clickOutside);
-
-     return () => {
-     document.removeEventListener("mousedown", clickOutside);
-     }
-    }, []);
-
-
-
-
     return(
     
         <header>
-            <nav className="h-[60px] z-10 md:h-[80px] lg:[80px] w-full bg-[#228B22] text-[#F5F5DC] fixed top-0">
+            <nav className="h-[60px] z-10 md:h-[80px] w-full bg-[#228B22] text-[#F5F5DC] fixed top-0">
                
                 <ul className="h-full flex justify-around items-center">
                     
@@ -127,14 +106,14 @@ import { Link, useLocation } from "react-router-dom";
 
 
                     {/* Book Now */}
-                    {location.pathname !== "/bookNow" && (
-                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to="bookNow"><i className="fa-regular fa-calendar-check"/> Book Now</Link> </li> 
+                    {!isBookingFormPath && location.pathname !== "/book-now"  && (
+                    <li className="hidden lg:block  border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to="/book-now"><i className="fa-regular fa-calendar-check"/> Book Now</Link> </li> 
                     )}           
 
 
                     {/* About Us */}
-                    {location.pathname !== "/aboutUs" && (
-                    <li className="lg:block md:hidden border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to = "/aboutUs"> About Us</Link> </li>                   
+                    {location.pathname !== "/about-us" && (
+                    <li className="lg:block md:hidden border-b-2 border-transparent transition-all duration-900 ease-in-out hover:border-b-white"> <Link to = "/about-us"> About Us </Link> </li>                   
                     )}
 
                     {/* Login for larger devices */}
@@ -145,7 +124,7 @@ import { Link, useLocation } from "react-router-dom";
 
                     {/* Login for md and sm */}
                     {location.pathname !== "/login" && (
-                    <li className="lg:hidden border-b-2 border-transparent transition-all duration-600 ease-in-out hover:border-b-white"> <Link to = "/login"><i className="fa-solid fa-user" /> Login</Link></li>
+                    <li className="lg:hidden border-b-2 border-transparent transition-all duration-600 ease-in-out hover:border-b-white"> <Link to = "/login"> Login </Link></li>
                     )}
 
                     

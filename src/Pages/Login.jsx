@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image1 from '../assets/bg-image-loginpage.webp';
 import Image2 from '../assets/Phewa.webp';
-import Footer from '../Components/Footer.jsx';
+
 
 const Login = () => {
 
@@ -90,9 +90,6 @@ const submitHandler = (e) => {
         </div>
       </div>
   
-  
-
-     <Footer />
    </>
   )
 }

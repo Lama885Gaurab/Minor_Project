@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        'custom': '0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1)',
-      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], 
     },

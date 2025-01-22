@@ -1,4 +1,4 @@
-import Footer from "./Components/Footer";
+
 import Header from "./Navbar/Header.jsx";
 import HeroImage from "./assets/2941e0cf-81a0-4e2f-99f0-0f7e8d761913.webp";
 import HeroImage2 from "./assets/heroimage.webp";
@@ -21,7 +21,6 @@ function HeroIMG() {
             </p>            
         </div>
 
-        <Footer />
         </>
     );
 }
